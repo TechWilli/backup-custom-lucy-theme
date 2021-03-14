@@ -1,8 +1,16 @@
 export default {
-  background1: '#0e0f15',
-  background2: '#14161e',
-  background3: '#1a1d27',
+  // barra lateral onde tem os ícones da lupa, git...
+  background1: '#282C34',
+  // background1: '#0e0f15',
+  // barra lateral que exibe as pastas
+  background2: '#21252B',
+  // background2: '#14161e',
+  // background do código
+  background3: '#282C34',
+  // background3: '#1a1d27',
   background3Half: '#1F222D',
+  // background do terminal integrado
+  // background4: '#282C34',
   background4: '#292c38',
   selection: '#413b4f',
   dim1: '#494c59',
@@ -28,5 +36,7 @@ export default {
   translucent9: '#ffffff12',
   customColorWill: '#e3a1b7',
   customColorWill2: '#87bcc4',
+  customColorWillTags: '#BBA0FF',
+  customColorWillTags2: '#88BBFF',
   customBackgroundWill: '#2a2a2e'
 }

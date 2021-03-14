@@ -18,7 +18,7 @@ export default ({ name, colors }) => ({
     'button.background': colors.background4,
     'button.foreground': colors.dim3,
     'button.hoverBackground': colors.background3,
-    'dropdown.background': colors.background3,
+    'dropdown.background': colors.background4,
     'dropdown.listBackground': colors.background4,
     'dropdown.border': colors.background3,
     'dropdown.foreground': colors.dim3,
@@ -45,7 +45,8 @@ export default ({ name, colors }) => ({
     'list.errorForeground': colors.base1,
     'list.warningForeground': colors.accent2,
     'list.dropBackground': colors.translucent,
-    'list.focusBackground': colors.background3,
+    // passei aqui, quando apertar crtl + shift + p é o hover da lista movendo com a seta
+    'list.focusBackground': "#363636",
     'list.focusForeground': colors.pure2,
     'list.highlightForeground': colors.pure2,
     'list.hoverBackground': colors.background2,
@@ -71,14 +72,16 @@ export default ({ name, colors }) => ({
     'editorGroup.border': colors.background2,
     'editorGroup.dropBackground': colors.translucent,
     'editorGroupHeader.noTabsBackground': colors.background3,
-    'editorGroupHeader.tabsBackground': colors.background3,
+    // passei aqui
+    'editorGroupHeader.tabsBackground': colors.background2,
+    // 'editorGroupHeader.tabsBackground': colors.background3,
     'editorGroupHeader.tabsBorder': colors.background3,
     'tab.activeBackground': colors.background3,
     'tab.activeForeground': colors.base2,
-    'tab.border': colors.background3,
+    'tab.border': colors.background2,
     'tab.activeBorder': colors.base2,
     'tab.unfocusedActiveBorder': colors.dim3,
-    'tab.inactiveBackground': colors.background3,
+    'tab.inactiveBackground': colors.background2,
     'tab.inactiveForeground': colors.dim3,
     'tab.unfocusedActiveForeground': colors.dim4,
     'tab.unfocusedInactiveForeground': colors.dim3,
@@ -124,9 +127,10 @@ export default ({ name, colors }) => ({
     'editorWarning.foreground': colors.accent2,
     'editorWarning.border': colors.translucent8,
     'editorInfo.foreground': colors.accent1,
-    'editorInfo.border': colors.background3,
+    'editorInfo.border': "#3B4048",
     'editorHint.foreground': colors.const,
-    'editorHint.border': colors.background3,
+    'editorHint.border': "#3B4048",
+    // "#1E202C"
     'editorGutter.background': colors.background3,
     'editorGutter.modifiedBackground': colors.accent2,
     'editorGutter.addedBackground': colors.call,
@@ -142,15 +146,15 @@ export default ({ name, colors }) => ({
     'editorSuggestWidget.foreground': colors.dim4,
     'editorSuggestWidget.highlightForeground': colors.pure2,
     'editorSuggestWidget.selectedBackground': colors.dim2,
-    'editorHoverWidget.background': colors.background4,
-    'editorHoverWidget.border': colors.background3,
+    'editorHoverWidget.background': colors.background2,
+    'editorHoverWidget.border': "#688DA9",
     'debugExceptionWidget.background': colors.background4,
-    'debugExceptionWidget.border': colors.background3,
+    'debugExceptionWidget.border': "#3B4048",
     'editorMarkerNavigation.background': colors.background4,
     'editorMarkerNavigationError.background': colors.base1,
     'editorMarkerNavigationWarning.background': colors.accent2,
     'editorMarkerNavigationInfo.background': colors.accent1,
-    'peekView.border': colors.background3,
+    'peekView.border': "#3B4048",
     'peekViewEditor.background': colors.background4,
     'peekViewEditorGutter.background': colors.background4,
     'peekViewEditor.matchHighlightBackground': colors.dim1,
@@ -167,10 +171,10 @@ export default ({ name, colors }) => ({
     'merge.currentContentBackground': colors.translucent6,
     'merge.incomingHeaderBackground': colors.translucent5,
     'merge.incomingContentBackground': colors.translucent4,
-    'merge.border': colors.background3,
+    'merge.border': "#3B4048",
     'merge.commonHeaderBackground': colors.translucent2,
     'merge.commonContentBackground': colors.translucent3,
-    'editorOverviewRuler.border': colors.background3,
+    'editorOverviewRuler.border': "#3B4048",
     'editorOverviewRuler.currentContentForeground': colors.background4,
     'editorOverviewRuler.incomingContentForeground': colors.background4,
     'editorOverviewRuler.findMatchForeground': colors.translucent2,
@@ -184,8 +188,8 @@ export default ({ name, colors }) => ({
     'editorOverviewRuler.errorForeground': colors.base1,
     'editorOverviewRuler.warningForeground': colors.accent2,
     'editorOverviewRuler.infoForeground': colors.accent1,
-    'panel.background': colors.background4,
-    'panel.border': colors.background3,
+    'panel.background': colors.background3,
+    'panel.border': "#3B4048",
     'panel.dropBackground': colors.translucent,
     'panelTitle.activeBorder': colors.base2,
     'panelTitle.activeForeground': colors.base2,
@@ -199,8 +203,8 @@ export default ({ name, colors }) => ({
     'statusBar.noFolderBackground': colors.background2,
     'statusBar.noFolderForeground': colors.dim2,
     'statusBar.noFolderBorder': colors.background1,
-    'statusBarItem.activeBackground': colors.background3,
-    'statusBarItem.hoverBackground': colors.background3,
+    'statusBarItem.activeBackground': "#3B4048",
+    'statusBarItem.hoverBackground': "#3B4048",
     'statusBarItem.prominentBackground': colors.background4,
     'statusBarItem.prominentHoverBackground': colors.background4,
     'titleBar.activeBackground': colors.background2,
@@ -219,9 +223,9 @@ export default ({ name, colors }) => ({
     'extensionButton.prominentForeground': colors.pure2,
     'extensionButton.prominentBackground': colors.background4,
     'extensionButton.prominentHoverBackground': colors.dim1,
-    'pickerGroup.border': colors.background3,
+    'pickerGroup.border': "#3B4048",
     'pickerGroup.foreground': colors.dim1,
-    'terminal.background': colors.background4,
+    'terminal.background': colors.background3,
     'terminal.foreground': colors.pure2,
     'terminal.ansiBlack': colors.background4,
     'terminal.ansiBlue': colors.accent2,
@@ -514,43 +518,6 @@ export default ({ name, colors }) => ({
     "breadcrumbPicker.background": "#4A4A4F"
   }, */
   tokenColors: [
-    // my custom scopes
-    {
-      scope: [
-        'variable.other.object.property.js',
-        'variable.other.object.property.ts'
-      ],
-      settings: {
-        foreground: colors.customColorWill2
-      }
-    },
-    {
-      scope: [
-        'string.quoted.single.js',
-        'string.quoted.double.js',
-        'punctuation.definition.string.begin.js',
-        'punctuation.definition.string.end.js',
-        'string.quoted.single.ts',
-        'string.quoted.double.ts',
-        'punctuation.definition.string.begin.ts',
-        'punctuation.definition.string.end.ts'
-      ],
-      settings: {
-        foreground: colors.base2
-      }
-    },
-    {
-      scope: [
-        'punctuation.definition.template-expression.begin.js',
-        'punctuation.definition.interpolation.begin.bracket.curly.scss',
-        'punctuation.definition.template-expression.end.js',
-        'punctuation.definition.interpolation.end.bracket.curly.scss'
-      ],
-      settings: {
-        foreground: colors.base1
-      }
-    },
-    // ---------------------------------------------
     {
       scope: [
         'comment',
@@ -1478,6 +1445,57 @@ export default ({ name, colors }) => ({
       settings: {
         foreground: colors.const
       }
-    }
+    },
+    // my custom scopes
+    // tem que ser no final para sobrescrever o que vem antes
+    {
+      "scope": [
+        "entity.name.tag.js",
+        "entity.name.tag",
+        // "meta.tag.js",
+        // "meta.block.js",
+        // "meta.function.js",
+        // "source.js",
+      ],
+      "settings": {
+        "foreground": colors.customColorWillTags
+      }
+    },
+    {
+      scope: [
+        'variable.other.object.property.js',
+        'variable.other.object.property.ts'
+      ],
+      settings: {
+        foreground: colors.customColorWill2
+      }
+    },
+    {
+      scope: [
+        'string.quoted.single.js',
+        'string.quoted.double.js',
+        'punctuation.definition.string.begin.js',
+        'punctuation.definition.string.end.js',
+        'string.quoted.single.ts',
+        'string.quoted.double.ts',
+        'punctuation.definition.string.begin.ts',
+        'punctuation.definition.string.end.ts'
+      ],
+      settings: {
+        foreground: colors.base2
+      }
+    },
+    {
+      scope: [
+        'punctuation.definition.template-expression.begin.js',
+        'punctuation.definition.interpolation.begin.bracket.curly.scss',
+        'punctuation.definition.template-expression.end.js',
+        'punctuation.definition.interpolation.end.bracket.curly.scss'
+      ],
+      settings: {
+        foreground: colors.base1
+      }
+    },
+    // ---------------------------------------------
   ]
 })
